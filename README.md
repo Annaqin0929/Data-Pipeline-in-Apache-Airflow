@@ -1,4 +1,4 @@
-# Regression
+# Linear Regression
 Assignment
 Task 1: Rmarkdown file to calculate the coefficient
 Task 2: ing appropriate terminology gives both a statistical and geometric explanation of this situation.
