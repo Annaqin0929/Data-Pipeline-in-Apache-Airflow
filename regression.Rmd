@@ -85,10 +85,15 @@ ggplot(data, aes(x = fitted(model), y = residuals)) +
   labs(x = "Fitted Values", y = "Residuals") +
   ggtitle("Residuals vs. Fitted Values")
 
+# Plot the residuals of the model
+par(mfrow=c(2, 2))
+plot(model, which = 1:4)
+
 ```
 ## Plot the obeservation and regression line with lable
 ```{r}
 # Plot the observations
+par(mfrow=c(1, 1))
 plot <- ggplot(data, aes(x = income, y = happiness)) +
   geom_point(color = "blue") +
   labs(x = "Income", y = "Happiness") +
@@ -161,5 +166,10 @@ ggplot(sample_data, aes(x = fitted(model), y = residuals)) +
   geom_point(color = "blue", size = 0.5) +
   labs(x = "Fitted Values", y = "Residuals") +
   ggtitle("Residuals vs. Fitted Values")
+
+# Plot the residuals of the model
+par(mfrow=c(2, 2))
+plot(model, which = 1:4)
+
 
 ```
